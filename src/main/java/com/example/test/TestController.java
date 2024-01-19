@@ -24,8 +24,6 @@ public class TestController {
     retrofit2.Response<HotelSearchApiResponse> retrofitResponse;
     HotelSearchApiResponse response = objectMapper.readValue(jsonString, responseType);
 //    retrofitResponse = Response.success(response);
-
-    log.error(String.valueOf(response));
     return response;
   }
 
